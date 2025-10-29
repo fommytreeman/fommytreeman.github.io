@@ -208,9 +208,34 @@ section {
     background: var(--bg-light);
 }
 
+.section-divider {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--primary-color), transparent);
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
 .about-content {
     max-width: 900px;
-    margin: 0 auto;
+    margin: 2rem auto;
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.about-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow-lg);
+    flex-shrink: 0;
+}
+
+.about-status {
+    max-width: 900px;
+    margin: 2rem auto 0;
 }
 
 .about-text h3 {
@@ -226,7 +251,21 @@ section {
     color: var(--primary-color);
 }
 
+.about-status h4 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
 .about-text p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.about-status p {
     font-size: 1.125rem;
     line-height: 1.8;
     color: var(--text-light);
@@ -654,6 +693,16 @@ section {
         padding: 2rem;
         box-shadow: var(--shadow-lg);
         transition: right 0.3s ease;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-image {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
     }
 
     .hero h1 {
