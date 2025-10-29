@@ -257,14 +257,26 @@ section {
     color: var(--text-dark);
 }
 
-.about-text h4 {
+.about-text p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.about-additional {
+    max-width: 900px;
+    margin: 3rem auto 0;
+}
+
+.about-additional h4 {
     font-size: 1.5rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
     color: var(--primary-color);
 }
 
-.about-text p {
+.about-additional p {
     font-size: 1.125rem;
     line-height: 1.8;
     color: var(--text-light);
