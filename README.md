@@ -19,11 +19,25 @@ To personalize your portfolio, update the following sections in `index.html`:
    - Update "Expected Graduation: Year" with your graduation date
    - Customize the description of your studies
 
-3. **Projects Section** (Lines 157-226):
-   - Replace project titles, descriptions, and tags
-   - Update the GitHub links from `#` to actual repository URLs
-   - Add demo links if available
-   - Add more project cards as needed
+3. **Projects Section** (Lines 143-290):
+   - Replace project titles, descriptions, and tags for each of the 8 projects
+   - Update the **Code** button links from `href="#"` to actual GitHub repository URLs:
+     ```html
+     <a href="https://github.com/username/repo-name" class="project-link"><i class="fab fa-github"></i> Code</a>
+     ```
+   - Update the **Screenshots** button links from `href="#"` to screenshot image URLs or gallery pages:
+     ```html
+     <!-- Option 1: Link to a single screenshot image -->
+     <a href="path/to/screenshot.png" class="project-link"><i class="fas fa-images"></i> Screenshots</a>
+     
+     <!-- Option 2: Link to a folder or gallery of screenshots -->
+     <a href="https://github.com/username/repo-name/tree/main/screenshots" class="project-link"><i class="fas fa-images"></i> Screenshots</a>
+     
+     <!-- Option 3: Link to an external image hosting service -->
+     <a href="https://imgur.com/a/your-album-id" class="project-link"><i class="fas fa-images"></i> Screenshots</a>
+     ```
+   - Customize project icons by changing the Font Awesome icon class (e.g., `fa-code`, `fa-mobile-alt`, `fa-database`, etc.)
+   - Add or remove project cards as needed by duplicating or deleting the project-card div blocks
 
 4. **Resume Section** (Lines 243-276):
    - Update job titles, companies, and dates
